@@ -1,5 +1,5 @@
 import axios from 'axios';
-export const getAllPizzas=()=>async dispatch=>{
+export const getAllPizzas=()=>async (dispatch)=>{
 
 dispatch({type:'GET_PIZZAS_REQUEST'})
 try{

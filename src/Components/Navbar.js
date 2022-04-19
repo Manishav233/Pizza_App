@@ -1,6 +1,9 @@
 import React from 'react';
-
+import { useSelector,useDispatch } from 'react-redux';
 export default function Navbar() {
+
+//creating object of our cartReducer
+const cartstate=useSelector(state=>state.cartReducer)
   return (
 <nav className="navbar navbar-expand-md navbar-dark bg-primary shadow p-3 mb-5 bg-primary rounded">
   <a className="navbar-brand" href="#">PIZZA ZONE</a>
@@ -13,7 +16,7 @@ export default function Navbar() {
         <a className="nav-link" href="#">Login</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Cart</a>
+        <a className="nav-link" href="#">Cart {cartstate.cartItems.length}</a>
       </li>
      </ul>
   </div>
