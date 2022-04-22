@@ -77,7 +77,7 @@ export default function Pizza({ pizza }) {
 
         <Modal.Body>
         <div style={{textAlign:'center'}}>
-       <img src={pizza.image} style={{height:"300px", width:"300px", }}/>
+       <img src={pizza.image} alt='pizza_image' style={{height:"300px", width:"300px", }}/>
        </div>
        <p className="m-3"><b>{pizza.description}</b></p>
        </Modal.Body>

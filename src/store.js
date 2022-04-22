@@ -2,12 +2,14 @@ import {combineReducers } from 'redux';
 import { createStore,applyMiddleware} from 'redux';
 import {getAllPizzasReducer} from './reducers/pizzaReducers'
 import thunk from 'redux-thunk';
+import { registerUserReducer } from './reducers/userReducer';
 import {composeWithDevTools} from 'redux-devtools-extension';
 
 import { cartReducer } from './reducers/cartReducer';
 const finalReducer=combineReducers({
 getAllPizzasReducer : getAllPizzasReducer,
-cartReducer:cartReducer
+cartReducer:cartReducer,
+registerUserReducer:registerUserReducer
 
 })
 //if we have any item by name cartItems in local Storage, we convert it into json object and assign to store

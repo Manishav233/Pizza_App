@@ -4,7 +4,8 @@ import Navbar from "./Components/Navbar";
 import Homepage from "./Screens/Homepage";
 import {BrowserRouter, Route,Routes, Link,Switch} from 'react-router-dom';
 import Cartscreen from "./Screens/Cartscreen";
-
+import Registerscreen from "./Screens/Registerscreen";
+import Loginscreen from "./Screens/Loginscreen";
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,9 @@ function App() {
       <Routes>
       <Route exact path="/" element={<Homepage />}/>
       <Route exact path="/cart"  element={<Cartscreen />}/>
+      <Route exact path="/register"  element={<Registerscreen/>}/>
+      <Route exact path="/login"  element={<Loginscreen />}/>
+      
       </Routes>
       </BrowserRouter>
       

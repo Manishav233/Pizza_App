@@ -25,14 +25,14 @@ function Cartscreen() {
                     {item.price}
                   </h1>
                   <h1 style={{display:'inline'}}>Quantity: </h1>
-                  <i className="fa fa-plus" aria-hidden="true" onClick={()=>{dispatch(addToCart(item,item.quantity+1,item.varient))}}></i>
-                  <b>{item.quantity}</b>
                   <i className="fa fa-minus" aria-hidden="true" onClick={()=>{dispatch(addToCart(item,item.quantity-1,item.varient))}}></i>
+                  <b>{item.quantity}</b>
+                  <i className="fa fa-plus" aria-hidden="true" onClick={()=>{dispatch(addToCart(item,item.quantity+1,item.varient))}}></i>
                <hr/>
                </div>
                
                 <div className="m-1 w-100">
-                <img src={item.image} style={{height:'90px',width:'90px'}}/>
+                <img src={item.image} alt='pizza_image' style={{height:'90px',width:'90px'}}/>
                 
                 </div>
                 <div className="m-1 w-100">

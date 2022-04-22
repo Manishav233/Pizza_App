@@ -62,3 +62,9 @@ margin: 5px;
 .fa-minus,.fa-trash{
 color:crimson !important;
 margin: 5px;}
+
+input,button{
+margin-top: 10px !important;
+/* box-shadow:none !important;
+*/
+}
